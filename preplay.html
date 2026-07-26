@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PrePlay — Motion Design Experience · Shirly Herscovici</title>
+<meta name="description" content="PrePlay — a motion design experience by Shirly Herscovici spanning motion graphics, animation and brand storytelling.">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="page-transition"></div>
+<div id="progress"></div>
+
+<header class="site-nav">
+  <a href="../index.html" class="logo">Shirly Herscovici <em>Creative Studio</em></a>
+  <button class="nav-toggle">Menu</button>
+  <nav class="primary">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#playground">Creative Playground</a>
+    <a href="../index.html#contact" class="is-cta">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="cs-hero">
+    <div class="wrap">
+      <div class="cs-kicker reveal"><span class="eyebrow">02 · Motion Design Experience</span></div>
+      <h1 class="cs-title reveal">PrePlay</h1>
+      <p class="cs-sub reveal">A motion identity built to carry rhythm and energy across broadcast, social, and on-platform formats — where the story has to land in seconds.</p>
+      <div class="cs-meta reveal">
+        <div><span class="m-label">Role</span><span class="m-value">Motion Designer</span></div>
+        <div><span class="m-label">Focus</span><span class="m-value">Motion Graphics</span></div>
+        <div><span class="m-label">Format</span><span class="m-value">Broadcast + Social</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-stage reveal"><canvas id="cs-stage-canvas"></canvas></div>
+
+  <section class="cs-block section">
+    <div class="wrap cs-block-head reveal">
+      <p class="eyebrow">Project Overview</p>
+      <div class="cs-block-body">
+        <h3>Motion as a brand signature.</h3>
+        <p>PrePlay needed a movement language distinct enough to be recognized muted, mid-scroll, in a fraction of a second. The work centers on a small set of motion principles applied consistently rather than a library of one-off effects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block section">
+    <div class="wrap cs-block-head reveal">
+      <p class="eyebrow">My Role</p>
+      <div class="cs-block-body">
+        <h3>Motion Design & Animation</h3>
+        <ul>
+          <li>Motion system design</li>
+          <li>Frame-by-frame animation in After Effects</li>
+          <li>Edit and pacing in Premiere</li>
+          <li>Sound-to-motion synchronization</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block section">
+    <div class="wrap cs-block-head reveal">
+      <p class="eyebrow">Creative Process</p>
+      <div class="cs-block-body">
+        <h3>Building a repeatable rhythm.</h3>
+        <div class="process-flow">
+          <span class="process-step">Reference</span><span class="arrow">→</span>
+          <span class="process-step">Rhythm Study</span><span class="arrow">→</span>
+          <span class="process-step">Storyboard</span><span class="arrow">→</span>
+          <span class="process-step">Animation</span><span class="arrow">→</span>
+          <span class="process-step">Sound Pass</span><span class="arrow">→</span>
+          <span class="process-step">Final Cut</span>
+        </div>
+        <p>Every sequence was tested muted first — if the pacing didn't read without sound, it wasn't ready.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-block section">
+    <div class="wrap cs-block-head reveal">
+      <p class="eyebrow">Reflection</p>
+      <div class="cs-block-body">
+        <h3>What travels, and what doesn't.</h3>
+        <p>PrePlay reinforced that a motion identity only works if it survives being cut down — the same principles had to hold at fifteen seconds and at ninety.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-nextproj">
+    <div class="wrap reveal">
+      <p class="eyebrow">Next Project</p>
+      <h3>Galgalatz — UI/UX Experience</h3>
+      <a href="galgalatz.html" class="btn" data-cursor="View">
+        View Case Study
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.4"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="foot-note">© 2026 Shirly Herscovici — Creative Designer</span>
+  <div class="foot-links">
+    <a href="#" data-cursor="Open">LinkedIn</a>
+    <a href="#" data-cursor="Open">Instagram</a>
+    <a href="#" data-cursor="Open">Behance</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../js/canvas-art.js"></script>
+<script src="../js/main.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', ()=>{
+    const c = document.getElementById('cs-stage-canvas');
+    if(c) StudioCanvas.init(c, { colors:['#8FD9D2','#C9BFEA','#F4CBDA'], bg:'#182440', blobCount:5, speed:0.8 });
+  });
+</script>
+</body>
+</html>
